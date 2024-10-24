@@ -18,7 +18,7 @@ import java.util.List;
 public class LisencePlate {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private String lId;
+    private Integer lId;
     private String lpnNo;
     private String orderId;
 }

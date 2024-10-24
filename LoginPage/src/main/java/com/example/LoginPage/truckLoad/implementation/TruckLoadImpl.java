@@ -39,7 +39,8 @@ public class TruckLoadImpl {
                 if(ordersInfo.getStatus().equals(OrderStatus.READYTOSHIP)){
                     LisencePlate lisencePlate = new LisencePlate();
                     lisencePlate.setLpnNo(lpnDto.getLpnNo());
-                    lisencePlate.setOrderId(lisencePlate.getOrderId());
+//                    lisencePlate.setOrderId(lisencePlate.getOrderId());
+                    lisencePlate.setOrderId(orderId);
                     lisencePlateList.add(lisencePlateRepo.save(lisencePlate));
                 }
             }
